@@ -13,18 +13,15 @@ document.querySelectorAll('a').forEach(links =>{
 
 });
 
-var job = new Array(" Web Developer.", " Web Designer.", " UI/UX Designer.");
-var ind= 0;
-function ChangeText(){
-  document.getElementById('type1').innerHTML = job[ind];       
-  if(ind < job.length - 1 ){
-    ind++;
-  }else{
-    ind = 0;
-  }
-  setTimeout("ChangeText();", 1000);
-}
-ChangeText();
+var options = {
+  strings: [" Web Developer.", " Web Designer.", " UI/UX Designer."],
+  typeSpeed: 40,
+  backSpeed: 60,
+  smartBackspace: false,
+  shuffle: true,
+  loop: true,
+  loopCount: Infinity,
+};
 
-
+var typed = new Typed('#type1', options);
 
