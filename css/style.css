@@ -357,10 +357,6 @@ span {
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
 }
 
-.box{
-    border-radius: 20px;
-}
-
 .about .row-2 .box-container .box h3 {
   color: var(--main-color);
   font-size: 3rem;
@@ -460,7 +456,7 @@ span {
   color: #666;
 }
 
-.portfolio .box-container {
+/* .portfolio .box-container {
   display: flex;
   flex-wrap: wrap;
   gap: 1.5rem;
@@ -522,7 +518,7 @@ span {
 .portfolio .box-container .box .icons a:hover {
   background: var(--main-color);
   color: #fff;
-}
+} */
 
 .contact .icons-container {
   display: flex;
